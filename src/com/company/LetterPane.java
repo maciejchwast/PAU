@@ -6,7 +6,7 @@ import java.awt.*;
 public class LetterPane {
     JLabel all[] = new JLabel[5];
     Word word = new Word();
-    public LetterPane(JFrame f){
+    public LetterPane(JPanel p){
         for (int i = 0; i<5;i++) {
             all[i] = new JLabel();
             all[i].setHorizontalAlignment(SwingConstants.CENTER);
@@ -15,7 +15,7 @@ public class LetterPane {
             all[i].setBackground(Color.GRAY);
             all[i].setOpaque(true);
             all[i].setBorder(BorderFactory.createLineBorder(Color.white, 3));
-            f.add(all[i]);
+            p.add(all[i]);
         }
     }
     public void update(Word word, BoolTable inWord, BoolTable exactSpot){
