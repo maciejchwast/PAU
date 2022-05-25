@@ -55,6 +55,8 @@ public class Word {
         return letters;
     }
 
+
+
     public void setWord(String word) {
         this.word = word;
     }

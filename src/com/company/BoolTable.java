@@ -12,13 +12,16 @@ public class BoolTable {
         }
     }
     public boolean allTrue(){
-        boolean result = false;
+        boolean result = true;
         for (boolean b : tab) {
             if (!b) {
-                result = true;
+                result = false;
                 break;
             }
         }
         return result;
+    }
+    public boolean getElement(int elem){
+        return tab[elem];
     }
 }
